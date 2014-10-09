@@ -1,0 +1,905 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="socket">
+      <UniqueIdentifier>{889e32c2-a451-45ed-913f-33f9c9544d47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="socket\include">
+      <UniqueIdentifier>{f4601bef-326c-4b8e-a2d2-d42d9022aebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="socket\source">
+      <UniqueIdentifier>{6e6ac1d3-fc64-4867-ae79-acc6655adc8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub">
+      <UniqueIdentifier>{4eb0e4a5-786f-49ca-a323-2d2cfa4184a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub\include">
+      <UniqueIdentifier>{128c4d21-40c3-48ea-b487-7f08e00b26b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pub\source">
+      <UniqueIdentifier>{b45e1001-7243-444e-bf61-1f6df73533c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{6977bf22-d81a-4c38-82c4-66d879b580f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json\include">
+      <UniqueIdentifier>{c67cebd8-8b84-4041-b5d9-7c5562efe434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json\source">
+      <UniqueIdentifier>{e26d6427-b798-4ba4-a131-13bf45b7f2c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ts">
+      <UniqueIdentifier>{c539e3ea-9440-41e5-8030-7703432d7285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ts\include">
+      <UniqueIdentifier>{1deb089a-e399-4587-833a-40c16aed6ca2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ts\source">
+      <UniqueIdentifier>{aff58b54-6a21-4350-943d-4a044e89824b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="udt">
+      <UniqueIdentifier>{f0247ce8-0b7b-409f-b0ca-90f603d0e484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="udt\include">
+      <UniqueIdentifier>{f3bebf9f-460f-4c05-9ac2-b0d67e81fcea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="udt\source">
+      <UniqueIdentifier>{f4a3495d-581b-429b-a9e5-b9f250cd5462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml">
+      <UniqueIdentifier>{8e6d7adb-d7e7-43eb-ae53-6d1899c21b2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml\include">
+      <UniqueIdentifier>{a7ee21dd-fa46-46db-be75-dedb28470a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml\source">
+      <UniqueIdentifier>{3cd53de9-d626-4401-9b7b-2693edfc1b10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="encrypt">
+      <UniqueIdentifier>{ba0365b3-ae1a-4786-ae7a-70f4cd012dda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="encrypt\include">
+      <UniqueIdentifier>{f1114b91-3e15-4a6c-aa72-a3f9c0b4b4e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="encrypt\source">
+      <UniqueIdentifier>{a0c58c18-63c0-4cdd-b00a-4e626aff80d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="openssl">
+      <UniqueIdentifier>{d5bb81e9-2f32-45c8-9940-af1471e8bf75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="openssl\include">
+      <UniqueIdentifier>{592c64b6-bf91-4e06-9261-a3512aa97f58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy">
+      <UniqueIdentifier>{e4de0acb-2085-4d86-a92e-9ad7af302ccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy\include">
+      <UniqueIdentifier>{cab90b74-95bf-42dc-9d19-9bbb17f9e173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy\source">
+      <UniqueIdentifier>{ad137bf9-9a50-4694-b5b3-6e999ccbbabd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aac">
+      <UniqueIdentifier>{d01212d5-4690-4713-89b8-9bd2e5c01f19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aac\include">
+      <UniqueIdentifier>{6a1043c8-b9d9-41b2-8bfe-d759485236c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aac\source">
+      <UniqueIdentifier>{acd011ab-8657-4e04-91a9-a4b1e20b904e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{0ada5905-828a-4a75-8306-aa5999622ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http\include">
+      <UniqueIdentifier>{71ba5578-9d71-41d4-8d5d-b69d66da3952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http\source">
+      <UniqueIdentifier>{730b2ec9-7edc-4cea-84ac-b7f203fd657e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagerServer">
+      <UniqueIdentifier>{1e8b0cae-1521-4934-a2e0-fbcf300c4bf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagerServer\include">
+      <UniqueIdentifier>{13ec2b35-ea59-4360-b4b1-f95602caafff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagerServer\source">
+      <UniqueIdentifier>{dbe82896-e272-4d27-ad27-b6716eb00e37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\socket\Multicast.cpp">
+      <Filter>socket\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\socket\SWL_ConnectProcEx.cpp">
+      <Filter>socket\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\socket\SWL_ListenProcEx.cpp">
+      <Filter>socket\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\socket\SWL_MultiNet.cpp">
+      <Filter>socket\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\socket\SWL_MultiNetCommEx.cpp">
+      <Filter>socket\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\socket\SWL_Public.cpp">
+      <Filter>socket\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\pub\TVT_PubCom.cpp">
+      <Filter>pub\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\json\json_reader.cpp">
+      <Filter>json\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\json\json_value.cpp">
+      <Filter>json\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\json\json_writer.cpp">
+      <Filter>json\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ts\TSMuxer.cpp">
+      <Filter>ts\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encrypt\CryptAes.cpp">
+      <Filter>encrypt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\encrypt\CryptRsa.cpp">
+      <Filter>encrypt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="include\openssl\applink.c">
+      <Filter>openssl\include</Filter>
+    </ClCompile>
+    <ClCompile Include="source\proxy\DataBufferEx.cpp">
+      <Filter>proxy\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\proxy\DeviceSearcher.cpp">
+      <Filter>proxy\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\proxy\LiveStreamBuffer.cpp">
+      <Filter>proxy\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\proxy\Mp4StreamBuffer.cpp">
+      <Filter>proxy\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\proxy\NetDevice.cpp">
+      <Filter>proxy\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\proxy\NetDeviceMan.cpp">
+      <Filter>proxy\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\proxy\ProxyServer.cpp">
+      <Filter>proxy\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\proxy\StreamBufferMan.cpp">
+      <Filter>proxy\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\aacEncode.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\aacquant.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\backpred.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\bitstream.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\channels.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\fft.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\filtbank.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\frame.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\huffman.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\ltp.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\midside.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\psychkni.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\tns.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\util.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\g711.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aac\G711Codec.cpp">
+      <Filter>aac\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ts\TSStream.cpp">
+      <Filter>ts\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\proxy\DeviceConnector.cpp">
+      <Filter>proxy\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatClientPeerManager.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatClientUdtSocket.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatCommon.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatConnectProc.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatDeviceFetcher.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatDevicePeer.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatHeapDataManager.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatListenProc.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatLogger.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatMultiNetComm.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatRunner.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatServerListFetcher.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatSimpleDataBlock.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatSocket.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatSocketBase.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatSockManager.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatTraversalClient.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatTraversalClientPeer.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatTraversalDevicePeer.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatTraversalHandler.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatTraversalXml.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatUdt.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatUdtClientPeer.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatUdtTransport.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\NatXml.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\udt\RelayObj.cpp">
+      <Filter>udt\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\http\SSLClient.cpp">
+      <Filter>http\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\http\TcpSession.cpp">
+      <Filter>http\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\http\TVTHttp.cpp">
+      <Filter>http\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\http\TVTHttpBody.cpp">
+      <Filter>http\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\http\TVTHttpHeader.cpp">
+      <Filter>http\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\xml\tinyxmlparser.cpp">
+      <Filter>xml\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\xml\tinyxmlerror.cpp">
+      <Filter>xml\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\xml\tinyxml.cpp">
+      <Filter>xml\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\proxy\NetDeviceConnector.cpp">
+      <Filter>proxy\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\manager_server\AvosServer.cpp">
+      <Filter>ManagerServer\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\manager_server\ManagerServer.cpp">
+      <Filter>ManagerServer\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\manager_server\Base64.cpp">
+      <Filter>ManagerServer\source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\socket\Multicast.h">
+      <Filter>socket\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\socket\MulticastHeader.h">
+      <Filter>socket\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\socket\SWL_ConnectProcEx.h">
+      <Filter>socket\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\socket\SWL_ListenProcEx.h">
+      <Filter>socket\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\socket\SWL_MultiNet.h">
+      <Filter>socket\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\socket\SWL_MultiNetCommEx.h">
+      <Filter>socket\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\socket\SWL_Public.h">
+      <Filter>socket\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\socket\SWL_TypeDefine.h">
+      <Filter>socket\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pub\TVT_Config.h">
+      <Filter>pub\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pub\TVT_DevDefine.h">
+      <Filter>pub\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pub\TVT_Error.h">
+      <Filter>pub\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pub\TVT_Product.h">
+      <Filter>pub\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pub\TVT_PubCom.h">
+      <Filter>pub\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pub\TVT_PubDefine.h">
+      <Filter>pub\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pub\TVT_TimeZone.h">
+      <Filter>pub\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json\autolink.h">
+      <Filter>json\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json\config.h">
+      <Filter>json\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json\features.h">
+      <Filter>json\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json\forwards.h">
+      <Filter>json\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json\json.h">
+      <Filter>json\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json\reader.h">
+      <Filter>json\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json\value.h">
+      <Filter>json\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json\writer.h">
+      <Filter>json\include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\json\json_batchallocator.h">
+      <Filter>json\source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\json\json_internalarray.h">
+      <Filter>json\source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\json\json_internalmap.h">
+      <Filter>json\source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\json\json_valueiterator.h">
+      <Filter>json\source</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ts\TSMuxer.h">
+      <Filter>ts\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encrypt\CryptAes.h">
+      <Filter>encrypt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encrypt\CryptRsa.h">
+      <Filter>encrypt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encrypt\EAProtocol.h">
+      <Filter>encrypt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\aes.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\asn1.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\asn1_mac.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\asn1t.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\bio.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\blowfish.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\bn.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\buffer.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\camellia.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\cast.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\cms.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\comp.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\conf.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\conf_api.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\crypto.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\des.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\des_old.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dh.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dsa.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dso.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dtls1.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\e_os2.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ebcdic.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ec.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ecdh.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ecdsa.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\engine.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\err.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\evp.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\hmac.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\idea.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\krb5_asn.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\kssl.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\lhash.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\md4.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\md5.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\mdc2.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\modes.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\obj_mac.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\objects.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ocsp.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\opensslconf.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\opensslv.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ossl_typ.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pem.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pem2.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pkcs12.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pkcs7.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pqueue.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rand.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rc2.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rc4.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ripemd.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rsa.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\safestack.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\seed.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\sha.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ssl.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ssl2.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ssl23.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ssl3.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\stack.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\symhacks.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\tls1.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ts.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\txt_db.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ui.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ui_compat.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\whrlpool.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\x509.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\x509_vfy.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\x509v3.h">
+      <Filter>openssl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\proxy\DataBufferEx.h">
+      <Filter>proxy\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\proxy\DeviceSearcher.h">
+      <Filter>proxy\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\proxy\LiveStreamBuffer.h">
+      <Filter>proxy\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\proxy\Mp4StreamBuffer.h">
+      <Filter>proxy\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\proxy\NetDevice.h">
+      <Filter>proxy\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\proxy\NetDeviceMan.h">
+      <Filter>proxy\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\proxy\ProxyProtocol.h">
+      <Filter>proxy\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\proxy\ProxyServer.h">
+      <Filter>proxy\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\proxy\StreamBuffer.h">
+      <Filter>proxy\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\proxy\StreamBufferMan.h">
+      <Filter>proxy\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\aacEncode.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\aacquant.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\backpred.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\bitstream.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\cfg.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\channels.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\coder.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\faac.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\fft.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\filtbank.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\frame.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\huffman.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\hufftab.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\ltp.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\midside.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\psych.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\tns.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\util.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\version.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aac\G711Codec.h">
+      <Filter>aac\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ts\TSStream.h">
+      <Filter>ts\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\proxy\DeviceConnector.h">
+      <Filter>proxy\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatBaseTypes.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatClientPeerManager.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatClientUdtSocket.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatCommon.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatConnectProc.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatDebug.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatDeviceFetcher.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatDevicePeer.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatHeapDataManager.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatListenProc.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatLogger.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatMultiNetComm.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatPublicTypes.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatRunner.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatServerListFetcher.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatSimpleDataBlock.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatSocket.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatSocketBase.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatSockManger.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatTestProtocol.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatTraversalClient.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatTraversalClientPeer.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatTraversalDevicePeer.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatTraversalHandler.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatTraversalProtocol.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatTraversalXml.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatUdt.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatUdtClientPeer.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatUdtTransport.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatUserDefine.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\NatXml.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\udt\RelayObj.h">
+      <Filter>udt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http\TVTHttpHeader.h">
+      <Filter>http\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http\SSLClient.h">
+      <Filter>http\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http\SSLType.h">
+      <Filter>http\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http\TcpSession.h">
+      <Filter>http\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http\TVTHttp.h">
+      <Filter>http\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http\TVTHttpBody.h">
+      <Filter>http\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http\TVTHttpDef.h">
+      <Filter>http\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xml\tinyxml.h">
+      <Filter>xml\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\proxy\NetDeviceConnector.h">
+      <Filter>proxy\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\manager_server\AvosServer.h">
+      <Filter>ManagerServer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\manager_server\ManagerServer.h">
+      <Filter>ManagerServer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\manager_server\Base64.h">
+      <Filter>ManagerServer\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\http\Makefile">
+      <Filter>http\source</Filter>
+    </None>
+  </ItemGroup>
+</Project>

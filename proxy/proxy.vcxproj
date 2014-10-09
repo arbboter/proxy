@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3493E08A-06B0-4BAB-8203-A2150C42E80A}</ProjectGuid>
+    <RootNamespace>proxy</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./include;./include/http;./include/aac;./include/socket;./include/pub;./include/manager_server;./include/json;./include/ts;./include/udt;./include/xml;./include/encrypt;./include/proxy;./include/openssl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;__TVT_NAT_SOCK__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>nafxcwd.lib;LIBCMTD.lib;../lib/libeay32.lib;../lib/ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>nafxcwd.lib;LIBCMTD.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AssemblyDebug>true</AssemblyDebug>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>./include;./include/socket;./include/pub;./include/json;./include/ts;./include/udt;./include/xml;./include/encrypt;./include/openssl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;__TVT_NAT_SOCK__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../lib/libeay32.lib;../lib/ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="source\aac\aacEncode.cpp" />
+    <ClCompile Include="source\aac\aacquant.cpp" />
+    <ClCompile Include="source\aac\backpred.cpp" />
+    <ClCompile Include="source\aac\bitstream.cpp" />
+    <ClCompile Include="source\aac\channels.cpp" />
+    <ClCompile Include="source\aac\fft.cpp" />
+    <ClCompile Include="source\aac\filtbank.cpp" />
+    <ClCompile Include="source\aac\frame.cpp" />
+    <ClCompile Include="source\aac\g711.cpp" />
+    <ClCompile Include="source\aac\G711Codec.cpp" />
+    <ClCompile Include="source\aac\huffman.cpp" />
+    <ClCompile Include="source\aac\ltp.cpp" />
+    <ClCompile Include="source\aac\midside.cpp" />
+    <ClCompile Include="source\aac\psychkni.cpp" />
+    <ClCompile Include="source\aac\tns.cpp" />
+    <ClCompile Include="source\aac\util.cpp" />
+    <ClCompile Include="source\http\SSLClient.cpp" />
+    <ClCompile Include="source\http\TcpSession.cpp" />
+    <ClCompile Include="source\http\TVTHttp.cpp" />
+    <ClCompile Include="source\http\TVTHttpBody.cpp" />
+    <ClCompile Include="source\http\TVTHttpHeader.cpp" />
+    <ClCompile Include="source\manager_server\AvosServer.cpp" />
+    <ClCompile Include="source\manager_server\Base64.cpp" />
+    <ClCompile Include="source\manager_server\ManagerServer.cpp" />
+    <ClCompile Include="source\proxy\DataBufferEx.cpp" />
+    <ClCompile Include="source\proxy\DeviceConnector.cpp" />
+    <ClCompile Include="source\proxy\DeviceSearcher.cpp" />
+    <ClCompile Include="source\proxy\LiveStreamBuffer.cpp" />
+    <ClCompile Include="source\proxy\Mp4StreamBuffer.cpp" />
+    <ClCompile Include="source\proxy\NetDevice.cpp" />
+    <ClCompile Include="source\proxy\NetDeviceConnector.cpp" />
+    <ClCompile Include="source\proxy\NetDeviceMan.cpp" />
+    <ClCompile Include="source\proxy\ProxyServer.cpp" />
+    <ClCompile Include="source\proxy\StreamBufferMan.cpp" />
+    <ClCompile Include="source\socket\Multicast.cpp" />
+    <ClCompile Include="source\socket\SWL_ConnectProcEx.cpp" />
+    <ClCompile Include="source\socket\SWL_ListenProcEx.cpp" />
+    <ClCompile Include="source\socket\SWL_MultiNet.cpp" />
+    <ClCompile Include="source\socket\SWL_MultiNetCommEx.cpp" />
+    <ClCompile Include="source\socket\SWL_Public.cpp" />
+    <ClCompile Include="source\pub\TVT_PubCom.cpp" />
+    <ClCompile Include="source\json\json_reader.cpp" />
+    <ClCompile Include="source\json\json_value.cpp" />
+    <ClCompile Include="source\json\json_writer.cpp" />
+    <ClCompile Include="source\ts\TSStream.cpp" />
+    <ClCompile Include="source\ts\TSMuxer.cpp" />
+    <ClCompile Include="source\udt\NatClientPeerManager.cpp" />
+    <ClCompile Include="source\udt\NatClientUdtSocket.cpp" />
+    <ClCompile Include="source\udt\NatCommon.cpp" />
+    <ClCompile Include="source\udt\NatConnectProc.cpp" />
+    <ClCompile Include="source\udt\NatDeviceFetcher.cpp" />
+    <ClCompile Include="source\udt\NatDevicePeer.cpp" />
+    <ClCompile Include="source\udt\NatHeapDataManager.cpp" />
+    <ClCompile Include="source\udt\NatListenProc.cpp" />
+    <ClCompile Include="source\udt\NatLogger.cpp" />
+    <ClCompile Include="source\udt\NatMultiNetComm.cpp" />
+    <ClCompile Include="source\udt\NatRunner.cpp" />
+    <ClCompile Include="source\udt\NatServerListFetcher.cpp" />
+    <ClCompile Include="source\udt\NatSimpleDataBlock.cpp" />
+    <ClCompile Include="source\udt\NatSocket.cpp" />
+    <ClCompile Include="source\udt\NatSocketBase.cpp" />
+    <ClCompile Include="source\udt\NatSockManager.cpp" />
+    <ClCompile Include="source\udt\NatTraversalClient.cpp" />
+    <ClCompile Include="source\udt\NatTraversalClientPeer.cpp" />
+    <ClCompile Include="source\udt\NatTraversalDevicePeer.cpp" />
+    <ClCompile Include="source\udt\NatTraversalHandler.cpp" />
+    <ClCompile Include="source\udt\NatTraversalXml.cpp" />
+    <ClCompile Include="source\udt\NatUdt.cpp" />
+    <ClCompile Include="source\udt\NatUdtClientPeer.cpp" />
+    <ClCompile Include="source\udt\NatUdtTransport.cpp" />
+    <ClCompile Include="source\udt\NatXml.cpp" />
+    <ClCompile Include="source\udt\RelayObj.cpp" />
+    <ClCompile Include="source\encrypt\CryptAes.cpp" />
+    <ClCompile Include="source\encrypt\CryptRsa.cpp" />
+    <ClCompile Include="include\openssl\applink.c" />
+    <ClCompile Include="source\xml\tinyxml.cpp" />
+    <ClCompile Include="source\xml\tinyxmlerror.cpp" />
+    <ClCompile Include="source\xml\tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\aac\aacEncode.h" />
+    <ClInclude Include="include\aac\aacquant.h" />
+    <ClInclude Include="include\aac\backpred.h" />
+    <ClInclude Include="include\aac\bitstream.h" />
+    <ClInclude Include="include\aac\cfg.h" />
+    <ClInclude Include="include\aac\channels.h" />
+    <ClInclude Include="include\aac\coder.h" />
+    <ClInclude Include="include\aac\faac.h" />
+    <ClInclude Include="include\aac\fft.h" />
+    <ClInclude Include="include\aac\filtbank.h" />
+    <ClInclude Include="include\aac\frame.h" />
+    <ClInclude Include="include\aac\G711Codec.h" />
+    <ClInclude Include="include\aac\huffman.h" />
+    <ClInclude Include="include\aac\hufftab.h" />
+    <ClInclude Include="include\aac\ltp.h" />
+    <ClInclude Include="include\aac\midside.h" />
+    <ClInclude Include="include\aac\psych.h" />
+    <ClInclude Include="include\aac\tns.h" />
+    <ClInclude Include="include\aac\util.h" />
+    <ClInclude Include="include\aac\version.h" />
+    <ClInclude Include="include\http\SSLClient.h" />
+    <ClInclude Include="include\http\SSLType.h" />
+    <ClInclude Include="include\http\TcpSession.h" />
+    <ClInclude Include="include\http\TVTHttp.h" />
+    <ClInclude Include="include\http\TVTHttpBody.h" />
+    <ClInclude Include="include\http\TVTHttpDef.h" />
+    <ClInclude Include="include\http\TVTHttpHeader.h" />
+    <ClInclude Include="include\manager_server\AvosServer.h" />
+    <ClInclude Include="include\manager_server\Base64.h" />
+    <ClInclude Include="include\manager_server\ManagerServer.h" />
+    <ClInclude Include="include\proxy\DataBufferEx.h" />
+    <ClInclude Include="include\proxy\DeviceConnector.h" />
+    <ClInclude Include="include\proxy\DeviceSearcher.h" />
+    <ClInclude Include="include\proxy\LiveStreamBuffer.h" />
+    <ClInclude Include="include\proxy\Mp4StreamBuffer.h" />
+    <ClInclude Include="include\proxy\NetDevice.h" />
+    <ClInclude Include="include\proxy\NetDeviceConnector.h" />
+    <ClInclude Include="include\proxy\NetDeviceMan.h" />
+    <ClInclude Include="include\proxy\ProxyProtocol.h" />
+    <ClInclude Include="include\proxy\ProxyServer.h" />
+    <ClInclude Include="include\proxy\StreamBuffer.h" />
+    <ClInclude Include="include\proxy\StreamBufferMan.h" />
+    <ClInclude Include="include\socket\Multicast.h" />
+    <ClInclude Include="include\socket\MulticastHeader.h" />
+    <ClInclude Include="include\socket\SWL_ConnectProcEx.h" />
+    <ClInclude Include="include\socket\SWL_ListenProcEx.h" />
+    <ClInclude Include="include\socket\SWL_MultiNet.h" />
+    <ClInclude Include="include\socket\SWL_MultiNetCommEx.h" />
+    <ClInclude Include="include\socket\SWL_Public.h" />
+    <ClInclude Include="include\socket\SWL_TypeDefine.h" />
+    <ClInclude Include="include\pub\TVT_Config.h" />
+    <ClInclude Include="include\pub\TVT_DevDefine.h" />
+    <ClInclude Include="include\pub\TVT_Error.h" />
+    <ClInclude Include="include\pub\TVT_Product.h" />
+    <ClInclude Include="include\pub\TVT_PubCom.h" />
+    <ClInclude Include="include\pub\TVT_PubDefine.h" />
+    <ClInclude Include="include\pub\TVT_TimeZone.h" />
+    <ClInclude Include="include\json\autolink.h" />
+    <ClInclude Include="include\json\config.h" />
+    <ClInclude Include="include\json\features.h" />
+    <ClInclude Include="include\json\forwards.h" />
+    <ClInclude Include="include\json\json.h" />
+    <ClInclude Include="include\json\reader.h" />
+    <ClInclude Include="include\json\value.h" />
+    <ClInclude Include="include\json\writer.h" />
+    <ClInclude Include="include\udt\NatBaseTypes.h" />
+    <ClInclude Include="include\udt\NatClientPeerManager.h" />
+    <ClInclude Include="include\udt\NatClientUdtSocket.h" />
+    <ClInclude Include="include\udt\NatCommon.h" />
+    <ClInclude Include="include\udt\NatConnectProc.h" />
+    <ClInclude Include="include\udt\NatDebug.h" />
+    <ClInclude Include="include\udt\NatDeviceFetcher.h" />
+    <ClInclude Include="include\udt\NatDevicePeer.h" />
+    <ClInclude Include="include\udt\NatHeapDataManager.h" />
+    <ClInclude Include="include\udt\NatListenProc.h" />
+    <ClInclude Include="include\udt\NatLogger.h" />
+    <ClInclude Include="include\udt\NatMultiNetComm.h" />
+    <ClInclude Include="include\udt\NatPublicTypes.h" />
+    <ClInclude Include="include\udt\NatRunner.h" />
+    <ClInclude Include="include\udt\NatServerListFetcher.h" />
+    <ClInclude Include="include\udt\NatSimpleDataBlock.h" />
+    <ClInclude Include="include\udt\NatSocket.h" />
+    <ClInclude Include="include\udt\NatSocketBase.h" />
+    <ClInclude Include="include\udt\NatSockManger.h" />
+    <ClInclude Include="include\udt\NatTestProtocol.h" />
+    <ClInclude Include="include\udt\NatTraversalClient.h" />
+    <ClInclude Include="include\udt\NatTraversalClientPeer.h" />
+    <ClInclude Include="include\udt\NatTraversalDevicePeer.h" />
+    <ClInclude Include="include\udt\NatTraversalHandler.h" />
+    <ClInclude Include="include\udt\NatTraversalProtocol.h" />
+    <ClInclude Include="include\udt\NatTraversalXml.h" />
+    <ClInclude Include="include\udt\NatUdt.h" />
+    <ClInclude Include="include\udt\NatUdtClientPeer.h" />
+    <ClInclude Include="include\udt\NatUdtTransport.h" />
+    <ClInclude Include="include\udt\NatUserDefine.h" />
+    <ClInclude Include="include\udt\NatXml.h" />
+    <ClInclude Include="include\udt\RelayObj.h" />
+    <ClInclude Include="include\xml\tinyxml.h" />
+    <ClInclude Include="source\json\json_batchallocator.h" />
+    <ClInclude Include="source\json\json_internalarray.h" />
+    <ClInclude Include="source\json\json_internalmap.h" />
+    <ClInclude Include="source\json\json_valueiterator.h" />
+    <ClInclude Include="include\ts\TSStream.h" />
+    <ClInclude Include="include\ts\TSMuxer.h" />
+    <ClInclude Include="include\encrypt\CryptAes.h" />
+    <ClInclude Include="include\encrypt\CryptRsa.h" />
+    <ClInclude Include="include\encrypt\EAProtocol.h" />
+    <ClInclude Include="include\openssl\aes.h" />
+    <ClInclude Include="include\openssl\asn1.h" />
+    <ClInclude Include="include\openssl\asn1_mac.h" />
+    <ClInclude Include="include\openssl\asn1t.h" />
+    <ClInclude Include="include\openssl\bio.h" />
+    <ClInclude Include="include\openssl\blowfish.h" />
+    <ClInclude Include="include\openssl\bn.h" />
+    <ClInclude Include="include\openssl\buffer.h" />
+    <ClInclude Include="include\openssl\camellia.h" />
+    <ClInclude Include="include\openssl\cast.h" />
+    <ClInclude Include="include\openssl\cms.h" />
+    <ClInclude Include="include\openssl\comp.h" />
+    <ClInclude Include="include\openssl\conf.h" />
+    <ClInclude Include="include\openssl\conf_api.h" />
+    <ClInclude Include="include\openssl\crypto.h" />
+    <ClInclude Include="include\openssl\des.h" />
+    <ClInclude Include="include\openssl\des_old.h" />
+    <ClInclude Include="include\openssl\dh.h" />
+    <ClInclude Include="include\openssl\dsa.h" />
+    <ClInclude Include="include\openssl\dso.h" />
+    <ClInclude Include="include\openssl\dtls1.h" />
+    <ClInclude Include="include\openssl\e_os2.h" />
+    <ClInclude Include="include\openssl\ebcdic.h" />
+    <ClInclude Include="include\openssl\ec.h" />
+    <ClInclude Include="include\openssl\ecdh.h" />
+    <ClInclude Include="include\openssl\ecdsa.h" />
+    <ClInclude Include="include\openssl\engine.h" />
+    <ClInclude Include="include\openssl\err.h" />
+    <ClInclude Include="include\openssl\evp.h" />
+    <ClInclude Include="include\openssl\hmac.h" />
+    <ClInclude Include="include\openssl\idea.h" />
+    <ClInclude Include="include\openssl\krb5_asn.h" />
+    <ClInclude Include="include\openssl\kssl.h" />
+    <ClInclude Include="include\openssl\lhash.h" />
+    <ClInclude Include="include\openssl\md4.h" />
+    <ClInclude Include="include\openssl\md5.h" />
+    <ClInclude Include="include\openssl\mdc2.h" />
+    <ClInclude Include="include\openssl\modes.h" />
+    <ClInclude Include="include\openssl\obj_mac.h" />
+    <ClInclude Include="include\openssl\objects.h" />
+    <ClInclude Include="include\openssl\ocsp.h" />
+    <ClInclude Include="include\openssl\opensslconf.h" />
+    <ClInclude Include="include\openssl\opensslv.h" />
+    <ClInclude Include="include\openssl\ossl_typ.h" />
+    <ClInclude Include="include\openssl\pem.h" />
+    <ClInclude Include="include\openssl\pem2.h" />
+    <ClInclude Include="include\openssl\pkcs12.h" />
+    <ClInclude Include="include\openssl\pkcs7.h" />
+    <ClInclude Include="include\openssl\pqueue.h" />
+    <ClInclude Include="include\openssl\rand.h" />
+    <ClInclude Include="include\openssl\rc2.h" />
+    <ClInclude Include="include\openssl\rc4.h" />
+    <ClInclude Include="include\openssl\ripemd.h" />
+    <ClInclude Include="include\openssl\rsa.h" />
+    <ClInclude Include="include\openssl\safestack.h" />
+    <ClInclude Include="include\openssl\seed.h" />
+    <ClInclude Include="include\openssl\sha.h" />
+    <ClInclude Include="include\openssl\ssl.h" />
+    <ClInclude Include="include\openssl\ssl2.h" />
+    <ClInclude Include="include\openssl\ssl23.h" />
+    <ClInclude Include="include\openssl\ssl3.h" />
+    <ClInclude Include="include\openssl\stack.h" />
+    <ClInclude Include="include\openssl\symhacks.h" />
+    <ClInclude Include="include\openssl\tls1.h" />
+    <ClInclude Include="include\openssl\ts.h" />
+    <ClInclude Include="include\openssl\txt_db.h" />
+    <ClInclude Include="include\openssl\ui.h" />
+    <ClInclude Include="include\openssl\ui_compat.h" />
+    <ClInclude Include="include\openssl\whrlpool.h" />
+    <ClInclude Include="include\openssl\x509.h" />
+    <ClInclude Include="include\openssl\x509_vfy.h" />
+    <ClInclude Include="include\openssl\x509v3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\http\Makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
